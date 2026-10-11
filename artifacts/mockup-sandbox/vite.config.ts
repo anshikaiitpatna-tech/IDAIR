@@ -49,10 +49,7 @@ export default defineConfig({
 
   build: {
     // Vercel's Vite preset serves from `dist`; Replit expects `dist/public`.
-    outDir: path.resolve(
-      import.meta.dirname,
-      process.env.VERCEL ? 'dist' : 'dist/public',
-    ),
+   outDir: path.resolve(import.meta.dirname, 'dist'),
     emptyOutDir: true,
   },
 
